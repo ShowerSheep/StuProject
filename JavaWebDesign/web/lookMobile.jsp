@@ -10,14 +10,15 @@
 <style>
     #ok {
         font-family: Monaco;
-        font-size: 26px;
+        font-size: 20px;
         color: black;
     }
 </style>
 <HTML>
-<body id=ok background=image/background.jpg>
+<body id=ok bgcolor="#ffc0cb">
 <div align="center">
-    选择某类手机,分页显示这类手机。
+    <br><br><br><br>
+    选择手机的操作系统,分页显示这类手机。<br><br>
     <% Connection con = null;
         Statement sql;
         ResultSet rs;

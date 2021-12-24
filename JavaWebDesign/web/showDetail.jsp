@@ -12,12 +12,12 @@
 <style>
     #tom {
         font-family: Monaco;
-        font-size: 26px;
+        font-size: 20px;
         color: black
     }
 </style>
 <HTML>
-<body background=image/background.jpg id=tom>
+<body bgcolor="#ffc0cb" id=tom>
 <center>
     <% try {
         loginBean = (Login) session.getAttribute("loginBean");

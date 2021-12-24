@@ -7,14 +7,14 @@
 <style>
     #tom {
         font-family: Monaco;
-        font-size: 26px;
+        font-size: 20px;
         color: black
     }
 </style>
 <jsp:useBean id="dataBean" class="save.data.Record_Bean" scope="session"/>
 <HTML>
 
-<body background=image/background.jpg>
+<body bgcolor="#ffc0cb">
 <center>
     <jsp:setProperty name="dataBean" property="pageSize" param="pageSize"/>
     <jsp:setProperty name="dataBean" property="currentPage" param="currentPage"/>
@@ -35,7 +35,7 @@
         </tr>
         <% int totalRecord = table.length;
             int pageSize = dataBean.getPageSize(); //每页显示的记录数。 int
-            totalPages = dataBean.getTotalPages();
+            int totalPages = dataBean.getTotalPages();
             if (totalRecord % pageSize == 0)
                 totalPages = totalRecord / pageSize;//总页数。 else totalPages=totalRecord/pageSize+1;
             dataBean.setPageSize(pageSize);

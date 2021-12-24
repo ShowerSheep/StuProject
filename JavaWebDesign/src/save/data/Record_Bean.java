@@ -1,10 +1,10 @@
 package save.data;
 public class Record_Bean{
     String [][] tableRecord=null;   //存放查询到的记录。
-    int pageSize=3;                 //每页显示的记录数。
+    int pageSize=5;                 //每页显示的记录数。
     int totalPages=1;               //分页后的总页数。
-    int currentPage =1   ;          //当前显示页 。
-    int totalRecords ;             //全部记录。
+    int currentPage =1;          //当前显示页 。
+    int totalRecords;             //全部记录。
     public void setTableRecord(String [][] s){
         tableRecord=s;
     }

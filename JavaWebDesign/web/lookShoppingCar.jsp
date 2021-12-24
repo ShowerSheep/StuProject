@@ -9,15 +9,16 @@
     <%@ include file="head.html" %>
 </HEAD>
 <title>查看购物车</title>
-<style>
+<style type="text/css">
     #tom {
         font-family: Monaco;
-        font-size: 26px;
-        color: blue
+        font-size: 20px;
+        color: black;
     }
+
 </style>
 <HTML>
-<body background=image/back.jpg id=tom>
+<body bgcolor="#ffc0cb" id=tom>
 <div align="center">
     <% if (loginBean == null) {
         response.sendRedirect("login.jsp");//重定向到登录页面。
@@ -36,10 +37,10 @@
         Connection con = null;
         Statement sql;
         ResultSet rs;
-        out.print("<table border=1>");
+        out.print("<table border=1 >");
         out.print("<tr>");
         out.print("<th id=tom width=120>" + "手机标识(id)");
-        out.print("<th id=tom width=120>" + "手机名称");
+        out.print("<th id=tom width=250>" + "手机名称");
         out.print("<th id=tom width=120>" + "手机价格");
         out.print("<th id=tom width=120>" + "购买数量");
         out.print("<th id=tom width=50>" + "修改数量");

@@ -6,14 +6,16 @@
 </HEAD>
 <style>
     #ok {
-        font-family: Monaco;
-        font-size: 50px;
+        font-family: 楷体;
+        font-size: 100px;
         color: green
     }
 </style>
 <HTML>
 
-<body background=image/background.jpg>
+<body bgcolor="#ffc0cb">
+
+<br><br><br><br><br><br><br><br>
 <center id=ok>
     欢迎光临
 </center>

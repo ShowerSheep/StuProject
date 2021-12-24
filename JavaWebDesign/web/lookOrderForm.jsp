@@ -11,12 +11,12 @@
 <style>
     #tom {
         font-family: Monaco;
-        font-size: 26px;
+        font-size: 20px;
         color: black
     }
 </style>
 <HTML>
-<body bgcolor=cyan id=tom>
+<body bgcolor="#ffc0cb" id=tom>
 <div align="center">
     <% if (loginBean == null) {
         response.sendRedirect("login.jsp");//重定向到登录页面。
@@ -38,8 +38,8 @@
         out.print("<table border=1>");
         out.print("<tr>");
         out.print("<th id=tom width=110>" + "订单序号");
-        out.print("<th id=tom width=100>" + "用户名称");
-        out.print("<th id=tom width=200>" + "订单信息");
+        out.print("<th id=tom width=200>" + "用户名称");
+        out.print("<th id=tom width=400>" + "订单信息");
         out.print("</tr>");
         try {
             con = ds.getConnection();//使用连接池中的连接。
