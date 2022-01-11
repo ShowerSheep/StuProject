@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .top-wrap{
+            padding:0 20px;
+            width: 980px;
+            height: 100px;
+            margin: 0 auto;
+            /* background-color: #bfa; */
+            border-bottom: 2px solid #D8D8D8;
+        }
+        .top-wrap>a>img{
+            margin: 27px 0 0 30px;
+            width: 126px;
+            height: 46px;
+        }
+        .top-wrap>button{
+            background-color: #ffd100;
+            float: right;
+            width: 56px;
+            height: 24px;
+            padding: 3px 10px;
+            font-size: 10px;
+            margin-top: 38px;
+            border:none;
+            color: #222;
+            border-radius: 2px;
+          
+        }
+        .top-wrap>span{
+            float: right;
+            line-height: 100px;
+            margin-right: 20px;
+        }
+        .centent{
+            margin: 0 auto;
+            padding: 20px 0 0 10px;
+            width: 980px;
+            height: 450px;
+            /* background-color: #bfa; */
+            border-bottom: 2px solid #D8D8D8;
+        }
+        .first-input{
+            position: relative;
+            width: 380px;
+            height: 60px;
+            /* background-color: pink; */
+        }
+        .first-input>label{
+            float: right;
+            line-height: 60px;
+        }
+        .first-input>input{
+            float: right;
+            margin-top: 10px;
+            height: 28px;
+            width: 285px;
+            padding: 5px;
+            outline: none;
+            font-size: 25px;
+            color: #222;
+            border:0.5px solid black;
+        }
+        .first-input>input:focus{
+            border: solid 0.5px #FE8C00;
+        }
+        .password{
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            padding-left:5px ;
+            color: #FE8C00;
+        }
+        .note-input{
+            margin-bottom: 10px;
+            position: relative;
+            width: 380px;
+            height: 60px;
+            /* background-color: pink; */
+        }
+        .note-input>label{
+            float: right;
+            line-height: 60px;
+        }
+        .note-input>input{
+            float: right;
+            margin-top: 10px;
+            height: 28px;
+            width: 285px;
+            padding: 5px;
+            outline: none;
+            font-size: 25px;
+            color: #222;
+            border:0.5px solid black;
+        }
+        .note-input>input:focus{
+            border: solid 0.5px #FE8C00;
+        }
+        .note-hint{
+            font-size: 10px;
+            width: 150px;
+            height: 20px;
+            position: absolute;
+           left: 385px;
+        }
+        .password-input{
+            position: relative;
+            width: 380px;
+            height: 60px;
+            /* background-color: pink; */
+            margin-bottom: 10px;
+        }
+        .password-input>label{
+            float: right;
+            line-height: 60px;
+        }
+        .password-input>input{
+            float: right;
+            margin-top: 10px;
+            height: 28px;
+            width: 285px;
+            padding: 5px;
+            outline: none;
+            font-size: 25px;
+            color: #222;
+            border:0.5px solid black;
+        }
+        .password-input>input:focus{
+            border: solid 0.5px #FE8C00;
+        }
+        .centent>button{
+            margin-left: 83px;
+            width: 297px;
+            height: 34px;
+            padding: 7px 20px;
+            background-color: #ffd100;
+            font-size: 16px;
+            border:0.5px solid black;
+        }
+        .user-agree{
+            margin-top: 10px;
+            width: 300px;
+            height: 70px;
+            padding-left: 83px;
+        }
+        .user-agree>input{
+            width: 17px;
+            height: 17px;
+        }
+        .last-meituan{
+            margin: 0 auto;
+            width: 730px;
+            height: 40px;
+            padding-top: 20px;
+            padding-left: 250px;
+        }
+        .last-meituan>span{
+            margin: 0 5px;
+        }
+        a{
+            text-decoration: none;
+            color: #FE8C00;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-wrap">
+        <a href="#"><img src="./image/user/logo.png" alt=""></a>
+        <button>登录</button>
+        <span>已有美团账号?</span>
+    </div>
+    <div class="centent">
+        <div class="first-input">
+            <input type="text" >
+            <label >手机号</label>
+            <label class="note-hint"></label>
+        </div>
+        <div class="note"> <label style="color: #fad21f;">免费获取动态验证码</label><label class="last-label" style="color:#222;margin-left: 10px;"></label>
+        </div>
+        <div class="note-input">
+            <input type="text" >
+            <label >动态验证码</label>
+            <label class="note-hint"></label>
+        </div>
+        <div class="password-input passwordOne">
+            <input type="password" >
+            <label >创建密码</label>
+        </div>
+        <div class="password-input passwordSend">
+            <input type="password" >
+            <label >确定密码</label>
+            <label class="note-hint"></label>
+        </div>
+        <button id="user-btn">完成注册并登录</button>
+
+        <div class="user-agree">
+            <input type="checkbox" >
+            <span>我已阅读并同意 <a href="#">《美团用户协议》<br>《隐私政策》</a>,并授权美团使用该美团账号信息（如昵称、头像、收货地址）进行统一管理</span>
+        </div>
+    </div>
+    <div class="last-meituan">
+        <span>©meituan.com京</span> <span>ICP证070791号</span>  <span>京公网安备11010502025545号</span>
+    </div>
+    
+</body>
+<script src="./jquery-3.6.0.js"></script>
+<script>
+    $(function(){
+        var numbers
+        var patt=/^1[3456789]\d{9}$/
+        $('.note').on('click',function(){
+            numbers=Math.random()*8999+1000
+            numbers=parseInt(numbers)
+            $(this).children('.last-label').text(numbers)
+        })
+        $('.first-input>input').on('blur',function(){
+            if( !patt.test($(this).val())){
+                $(this).siblings('.note-hint').html('你输入的手机号格式不对!')
+            }else{ $(this).siblings('.note-hint').text('')}
+        })
+
+        $('.note-input>input').on('blur',function(){
+            if(numbers!=$(this).val()&&$(this).val()){
+                $(this).siblings('.note-hint').text('你输入的验证码不对!')
+             }
+             else{
+                $(this).siblings('.note-hint').text('')
+             }   
+        })
+        $('.passwordSend>input').on('blur',function(){
+            if($('.passwordOne>input').val()!=$(this).val()){
+                $(this).siblings('.note-hint').text('你两次输入的密码不一致!')
+            }
+            else{
+                $(this).siblings('.note-hint').text('')
+            }
+        })
+        $('#user-btn').on('click',function(){
+            if($('.passwordOne>input').val()){
+                var user={name:$('.first-input>input').val(),password:$('.passwordOne>input').val()}
+                localStorage.setItem('user',JSON.stringify(user))
+                window.location.href='./index.html?user='+$('.first-input>input').val()
+            }
+            else{
+                return false
+            }
+
+        })
+
+        $('.top-wrap>button').on('click',function(){
+            window.location.href='./register.html'
+        })
+    })
+</script>
+</html>

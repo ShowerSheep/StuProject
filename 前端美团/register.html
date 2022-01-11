@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #666;
+        }
+
+        .top-title{
+            width: 980px;
+            height: 47px;
+            margin: 40px auto 30px;
+        }
+        .top-title>img{
+            height: 47px;
+        }
+        .site-body{
+            width: 980px;
+            height: 450px;
+            margin: 0 auto;
+        }
+        .site-body>img{
+            width: 480px;
+            height: 370px;
+            float: left;
+        }
+        .right-warp{
+            position: relative;
+            width: 270px;
+            height: 300px;
+            /* background-color: #bfa; */
+            float: right;
+        }
+        .top-warp{
+            width: 100%;
+            height: 20px;
+            color: #666;
+        }
+        .top-warp>span:first-child{
+            font-size: 18px;
+            float: left;
+        }
+        .top-warp>span:last-child{
+            font-size: 14px;
+            float: right;
+        }
+        .first-input{
+            position: relative;
+            width: 268px;
+            height: 40px;
+            margin: 10px 0;
+            padding-left: 2px;
+            border:1px solid #666;
+        }
+        .first-input>label{
+            line-height: 40px;
+            font-size: 14px;
+            margin: 0 3px;
+            color: #666;
+        }
+        .first-input>input{
+            font-size: 20px;
+            height: 40px;
+            border: none;
+            width: 190px;
+            position: absolute;
+            top: 0;
+            left: 38px;
+        }
+        .first-input>input:focus{
+            outline: none;
+        }
+        .forget-password{
+            width: 100%;
+            height: 14px;
+            margin: 5px 0;
+        }
+        .forget-password>a{
+            float: right;
+            font-size: 14px;
+            color: #f7ce17;
+            margin-right: 5px;
+        }
+        #user-btn{
+            width: 100%;
+            height: 34px;
+            margin: 5px 0;
+            background-color: #ffd100;
+            border: 1px solid #ffd100;
+        }
+        #user-btn:hover{
+            background-color: #f0c817;
+        }
+        .to-user{
+            width: 100%;
+            height: 14px;
+            margin: 5px 0 10px 0;
+        }
+        .to-user>a{
+            color: #f7ce17;
+        }
+        .user-agree{
+            margin-top: 15px;
+            width: 100%;
+        }
+        .user-agree a{
+            color: #f7ce17;
+        }
+        .top-hint{
+            width: 270px;
+            height: 40px;
+            line-height: 40px;
+            border: #ffd100 1px solid;
+            position: absolute;
+            top: -50px;
+            display: none;
+        }
+        .footer-box{
+            border-top: 1px solid rgb(212, 208, 208);
+            width: 980px;
+            height: 50px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgb(212, 208, 208);
+            
+        }
+        .footer-box>a{
+            float: left;
+            font-size: 12px;
+            line-height: 50px;
+            width: 80px;
+            height: 50px;
+        }
+        .footer-wint{
+            width: 980px;
+            height: 20px;
+            margin: 0 auto;
+        }
+        .footer-wint>span{
+            color: #666;
+            font-size: 12px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+   <div class="top-title">
+       <img src="./image/user/logo.png" alt="">
+   </div>
+   <div class="site-body clearfix">
+    <img src="./image/下载1.jpg" alt="">
+
+    <div class="right-warp">
+        <div class="top-warp">
+            <span>账号登录</span>
+            <span><a href="#">手机动态码登录</a><i class="fas fa-tablet-alt" style="margin: 0 3px;"></i></span>
+        </div>
+        <div class="first-input" id="phone">
+            <label >-86></label>
+            <input type="text" placeholder="手机号">
+        </div>
+        <div class="first-input" id="password">
+            <label><i class="fas fa-lock" ></i></label>
+            <input type="text" placeholder="密码">
+        </div>
+        <div class="forget-password"> 
+            <a href="#">忘记密码?</a>
+        </div>
+        <button id="user-btn">登录</button>
+        <div class="to-user">
+            <label >还没有注册</label>
+            <a href="#">立即注册</a>
+        </div>
+        <div class="user-agree">
+            <input type="checkbox" id="check">
+            <span>我已阅读并同意 <a href="#">《美团用户协议》《隐私政策》</a>,并授权美团使用该美团账号信息（如昵称、头像、收货地址）进行统一管理</span>
+        </div>
+        <div class="top-hint "><label  style="font-size: 14px;color: #666;"></label></div>
+    </div>
+   </div>
+   <div class="footer-box clearfix">
+       <a href="#">关于美团</a>
+       <a href="#">加入我们</a>
+       <a href="#">商家入驻</a>
+       <a href="#">帮助中心</a>
+       <a href="#">美团手机版</a>
+   </div>
+   <div class="footer-wint">
+    <span>©meituan.com京</span> <span>ICP证070791号</span>  <span>京公网安备11010502025545号</span>
+   </div>
+</body>
+<script>
+    $(function(){
+        $('.first-input>input').on('click',function(){
+            $(this).parent().css('border', '1px solid #ffd100')
+        }).on('blur',function(){
+            $(this).parent().css( 'border','1px solid #666')
+        })
+
+        $('#user-btn').on('click',function(){
+            // console.log(!$('#check')[0].checked)
+            if(!$('#check')[0].checked){
+                $('.top-hint').children().text('请勾选用户协定')
+            }
+            if(!$('#password>input').val()&&!$('#phone>input').val()){
+            $('.top-hint').children().text('请输入账号和密码')
+            }
+            else if(!$('#phone>input').val()){
+            $('.top-hint').children().text('请输入账号')
+            }
+           else if(!$('#password>input').val()){
+            $('.top-hint').children().text('请输入密码')
+           }
+           $('.top-hint').css('display','block')
+            setTimeout(function(){
+                $('.top-hint').css('display','none')
+           },3000)
+            var users=localStorage.getItem('user')
+            users=JSON.parse(users)
+            if(users.name!=$('#phone>input').val()||users.password!=$('#password>input').val()){
+                $('.top-hint').children().text('账号密码错误，请重新输入账号密码')
+            }else{
+                window.location.href='./index.html?user='+$('#phone>input').val()
+            }
+
+            
+        })
+        $('.to-user>a').on('click',function(){
+            window.location.href='./user.html'
+        })
+
+    })
+</script>
+</html>

@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <!-- 将 channelIdentifier 替换为您的上报通道标识 -->
+    <meta name="lx:category" content="donation">
+    <!-- 将 appIdentifier 替换为您在配置平台配置的应用标识，lx:appnm 或 lx:defaultAppnm 必须设置，否则将取 document.domain -->
+    <meta name="lx:appnm" content="donation_web">
+    <!-- 关闭自动pv上报 -->
+    <meta name="lx:autopv" content="off">
+    <title>美团公益</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/home.71902939dae5477d7c8511af607e1cc3.css">
+    <link rel="dns-prefetch" href="//analytics.meituan.net">
+    <link rel="dns-prefetch" href="//wreport.meituan.net">
+    <link rel="dns-prefetch" href="//report.meituan.net">
+    <script type="text/javascript">
+        !(function(win, doc, ns) {
+            var cacheFunName = '_MeiTuanALogObject';
+            win[cacheFunName] = ns;
+            if (!win[ns]) {
+                var _LX = function() {
+                    _LX.q.push(arguments);
+                    return _LX;
+                };
+                _LX.q = _LX.q || [];
+                _LX.l = +new Date();
+                win[ns] = _LX;
+            }
+        })(window, document, 'LXAnalytics');
+        window.LXAnalytics('config', 'onWebviewAppearAutoPV', false);
+        window._KNB_WX_LOADER = true;
+    </script>
+    <script>
+        "use strict";
+        ! function() {
+            var i = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "_Owl_",
+                t = window;
+            t[i] || (t[i] = {
+                isRunning: !1,
+                isReady: !1,
+                preTasks: [],
+                dataSet: [],
+                use: function(i, n) {
+                    this.isReady && t.Owl && t.Owl[i](n), this.preTasks.push({
+                        api: i,
+                        data: [n]
+                    })
+                },
+                add: function(i) {
+                    this.dataSet.push(i)
+                },
+                run: function() {
+                    var i = this;
+                    if (!this.isRunning) {
+                        this.isRunning = !0;
+                        var n = t.onerror;
+                        t.onerror = function() {
+                            this.isReady || this.add({
+                                type: "jsError",
+                                data: arguments
+                            }), n && n.apply(t, arguments)
+                        }.bind(this), (t.addEventListener || t.attachEvent)("error", function(t) {
+                            i.isReady || i.add({
+                                type: "resError",
+                                data: [t]
+                            })
+                        }, !0)
+                    }
+                }
+            }, t[i].run())
+        }();
+    </script>
+    <script>
+        var __CLIENT_CONFIG__ = {
+            "appId": "wxfff9e092c2287dd6",
+            "NODE_ENV": "production",
+            "fetchUrl": "/api"
+        }
+    </script>
+    <script>
+        var __SERVER_CONFIG__ = {
+            "moduleName": "pc",
+            "pageName": "home",
+            "title": "美团公益",
+            "userInfo": {},
+            "from": "unknown",
+            "rpc": {},
+            "organization": {
+                "ids": [1002511133331111],
+                "alerts": {
+                    "1002511133331111": "6月15日到30日，中国社会福利基金会官网服务器进行升级，在此期间，官网（http://www.cswef.org/）可能暂时无法访问或部分功能关闭，由此带来的不便请您谅解。如有问题，请拨打电话010-85114150 。谢谢。"
+                }
+            }
+        }
+    </script>
+    <script>
+        var __USER_INFO__ = {}
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <div data-reactroot="" class="home">
+            <header class="header-container">
+                <div>
+                    <div class="header-left">
+                        <div class="header-logo">
+                            <a href="/"><img src="image/logo_3.png" alt="美团公益"></a>
+                        </div>
+                        <div class="header-tabs">
+                            <a class="header-tabs-link active" href="/">
+                                <div>首页</div>
+                            </a>
+                            <a class="header-tabs-link" href="" target="_blank" rel="noopener noreferrer">
+                                <div>机构入驻</div>
+                            </a>
+                            <a class="header-tabs-link" href="">
+                                <div>关于我们</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box"><input type="input" value="" class="search-box-input" placeholder="请输入机构/项目名称"><i class="icon-font icon-search"></i></div><a class="link signup" href="/user.html">立即注册</a><a class="link login" href="/register.html">登录</a>
+                    </div>
+                </div>
+            </header>
+            <div class="content-container">
+                <div class="home-item home-banner">
+                    <div class="carousel-wrapper">
+                        <div class="react-swipe-container carousel" style="overflow: hidden; visibility: visible; position: relative;">
+                            <div style="overflow: hidden; position: relative; width: 1200px;">
+                                <img src="image/运动场.png" style="float: left; width: 1200px; position: relative; transition-property: transform; left: 0px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);" data-index="0" href="prepare.html">
+                            </div>
+                        </div>
+                        <div class="carousel-pagination">
+                            <div class="carousel-pagination-bullet is-active"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-item home-full">
+                    <ul>
+                        <li class="home-full-project">
+                            <img src="image/女生生理健康.png" class="picture" rel="noopener noreferrer" href="prepare.html">
+                            <div class="progress-bar no-radius">
+                                <div class="bar">
+                                    <div class="bar-fill" style="width: 0%; display: none;"></div>
+                                </div>
+                            </div>
+                            <div class="title" title="女生生理健康包25期贵州毕节赫章六曲河镇初中 | 慈善募捐"><a rel="noopener noreferrer" href="prepare.html">女生生理健康包25期贵州毕节赫章六曲河镇初中 | 慈善募捐</a></div>
+                            <div class="rest">
+                                <div><span>目标金额</span><span class="highlight">
+                                        <!-- react-text: 71 -->&nbsp;
+                                        <!-- /react-text -->
+                                        <!-- react-text: 72 -->57,112.00
+                                        <!-- /react-text -->
+                                        <!-- react-text: 73 -->&nbsp;
+                                        <!-- /react-text -->
+                                    </span>
+                                    <!-- react-text: 74 -->
+                                    <!-- /react-text -->
+                                    <!-- react-text: 75 -->元
+                                    <!-- /react-text -->
+                                </div>
+                                <div><span>已筹款</span><span class="highlight">
+                                        <!-- react-text: 79 -->&nbsp;
+                                        <!-- /react-text -->
+                                        <!-- react-text: 80 -->0
+                                        <!-- /react-text -->
+                                        <!-- react-text: 81 -->&nbsp;
+                                        <!-- /react-text -->
+                                    </span>
+                                    <!-- react-text: 82 -->
+                                    <!-- /react-text -->
+                                    <!-- react-text: 83 -->元
+                                    <!-- /react-text -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="home-full-project">
+                            <img src="image/净水计划.png" class="picture" rel="noopener noreferrer" href="prepare.html">
+                            <div class="progress-bar no-radius">
+                                <div class="bar">
+                                    <div class="bar-fill" style="width: 44.74%; display: block;"></div>
+                                </div>
+                            </div>
+                            <div class="title" title="净水计划9期甘肃庆阳上肖镇中心小学 | 慈善募捐"><a rel="noopener noreferrer" href="prepare.html">净水计划9期甘肃庆阳上肖镇中心小学 | 慈善募捐</a></div>
+                            <div class="rest">
+                                <div><span>目标金额</span><span class="highlight">
+                                        <!-- react-text: 95 -->&nbsp;
+                                        <!-- /react-text -->
+                                        <!-- react-text: 96 -->38,500.00
+                                        <!-- /react-text -->
+                                        <!-- react-text: 97 -->&nbsp;
+                                        <!-- /react-text -->
+                                    </span>
+                                    <!-- react-text: 98 -->
+                                    <!-- /react-text -->
+                                    <!-- react-text: 99 -->元
+                                    <!-- /react-text -->
+                                </div>
+                                <div><span>已筹款</span><span class="highlight">
+                                        <!-- react-text: 103 -->&nbsp;
+                                        <!-- /react-text -->
+                                        <!-- react-text: 104 -->17,226.00
+                                        <!-- /react-text -->
+                                        <!-- react-text: 105 -->&nbsp;
+                                        <!-- /react-text -->
+                                    </span>
+                                    <!-- react-text: 106 -->
+                                    <!-- /react-text -->
+                                    <!-- react-text: 107 -->元
+                                    <!-- /react-text -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="home-full-project">
+                            <img src="image/梦想教室.png" class="picture" rel="noopener noreferrer" href="prepare.html">
+                            <div class="progress-bar no-radius">
+                                <div class="bar">
+                                    <div class="bar-fill" style="width: 49.37%; display: block;"></div>
+                                </div>
+                            </div>
+                            <div class="title" title="梦想教室4期江西赣州瑞金沙洲坝镇八一希望学校 | 慈善募捐"><a rel="noopener noreferrer" href="prepare.html">梦想教室4期江西赣州瑞金沙洲坝镇八一希望学校 | 慈善募捐</a></div>
+                            <div class="rest">
+                                <div><span>目标金额</span><span class="highlight">
+                                        <!-- react-text: 119 -->&nbsp;
+                                        <!-- /react-text -->
+                                        <!-- react-text: 120 -->100,000.00
+                                        <!-- /react-text -->
+                                        <!-- react-text: 121 -->&nbsp;
+                                        <!-- /react-text -->
+                                    </span>
+                                    <!-- react-text: 122 -->
+                                    <!-- /react-text -->
+                                    <!-- react-text: 123 -->元
+                                    <!-- /react-text -->
+                                </div>
+                                <div><span>已筹款</span><span class="highlight">
+                                        <!-- react-text: 127 -->&nbsp;
+                                        <!-- /react-text -->
+                                        <!-- react-text: 128 -->49,376.00
+                                        <!-- /react-text -->
+                                        <!-- react-text: 129 -->&nbsp;
+                                        <!-- /react-text -->
+                                    </span>
+                                    <!-- react-text: 130 -->
+                                    <!-- /react-text -->
+                                    <!-- react-text: 131 -->元
+                                    <!-- /react-text -->
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="home-item home-recommend">
+                    <div class="home-recommend-title">推荐项目</div>
+                    <div>
+                        <ul class="home-recommend-project-wrapper">
+                            <li class="home-recommend-project">
+                                <div class="picture">
+                                    <img src="image/女生生理健康包.png" class="picture" rel="noopener noreferrer" href="prepare.html"></a>
+                                </div>
+                                <div class="card">
+                                    <div class="card-item card-title" title="女生生理健康包24期甘肃临夏州康乐县五户学校 | 慈善募捐"><a rel="noopener noreferrer" href="prepare.html">女生生理健康包24期甘肃临夏州康乐县五户学校 |
+                                            慈善募捐</a></div>
+                                    <div class="card-item card-intro short" title="simpleIntro"></div>
+                                    <div class="card-item card-progress">
+                                        <div class="progress-bar has-ratio">
+                                            <div class="bar">
+                                                <div class="bar-fill" style="width: 82.62%; display: block;"></div>
+                                            </div><span class="ratio">82.62%</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-item card-amount">
+                                        <div><span>目标金额</span><span class="highlight">
+                                                <!-- react-text: 150 -->&nbsp;
+                                                <!-- /react-text -->
+                                                <!-- react-text: 151 -->29,150.00
+                                                <!-- /react-text -->
+                                                <!-- react-text: 152 -->&nbsp;
+                                                <!-- /react-text -->
+                                            </span>
+                                            <!-- react-text: 153 -->
+                                            <!-- /react-text -->
+                                            <!-- react-text: 154 -->元
+                                            <!-- /react-text -->
+                                        </div>
+                                        <div><span>已筹款</span><span class="highlight">
+                                                <!-- react-text: 158 -->&nbsp;
+                                                <!-- /react-text -->
+                                                <!-- react-text: 159 -->24,086.00
+                                                <!-- /react-text -->
+                                                <!-- react-text: 160 -->&nbsp;
+                                                <!-- /react-text -->
+                                            </span>
+                                            <!-- react-text: 161 -->
+                                            <!-- /react-text -->
+                                            <!-- react-text: 162 -->元
+                                            <!-- /react-text -->
+                                        </div>
+                                    </div>
+                                    <div class="card-item card-btn">
+                                        <div>
+                                            <!-- react-text: 165 -->捐款次数
+                                            <!-- /react-text -->
+                                            <!-- react-text: 166 -->6,648
+                                            <!-- /react-text -->
+                                            <!-- react-text: 167 -->
+                                            <!-- /react-text -->
+                                            <!-- react-text: 168 -->次
+                                            <!-- /react-text -->
+                                        </div>
+                                        <a rel="noopener noreferrer" href="prepare.html">
+                                            <div class="dn-button dn-button-primary"><span class="dn-text">我要捐款</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="home-recommend-project">
+                                <div class="picture">
+                                    <img src="image/内蒙古自治区人民医院.png" class="picture" rel="noopener noreferrer" href="prepare.html">
+                                </div>
+                                <div class="card">
+                                    <div class="card-item card-title" title="内蒙古自治区人民医院病房学校4期 | 慈善募捐"><a rel="noopener noreferrer" href="prepare.html">内蒙古自治区人民医院病房学校4期 | 慈善募捐</a>
+                                    </div>
+                                    <div class="card-item card-intro short" title="simpleIntro"></div>
+                                    <div class="card-item card-progress">
+                                        <div class="progress-bar has-ratio">
+                                            <div class="bar">
+                                                <div class="bar-fill" style="width: 79.98%; display: block;"></div>
+                                            </div><span class="ratio">79.98%</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-item card-amount">
+                                        <div><span>目标金额</span><span class="highlight">
+                                                <!-- react-text: 188 -->&nbsp;
+                                                <!-- /react-text -->
+                                                <!-- react-text: 189 -->75,000.00
+                                                <!-- /react-text -->
+                                                <!-- react-text: 190 -->&nbsp;
+                                                <!-- /react-text -->
+                                            </span>
+                                            <!-- react-text: 191 -->
+                                            <!-- /react-text -->
+                                            <!-- react-text: 192 -->元
+                                            <!-- /react-text -->
+                                        </div>
+                                        <div><span>已筹款</span><span class="highlight">
+                                                <!-- react-text: 196 -->&nbsp;
+                                                <!-- /react-text -->
+                                                <!-- react-text: 197 -->59,989.00
+                                                <!-- /react-text -->
+                                                <!-- react-text: 198 -->&nbsp;
+                                                <!-- /react-text -->
+                                            </span>
+                                            <!-- react-text: 199 -->
+                                            <!-- /react-text -->
+                                            <!-- react-text: 200 -->元
+                                            <!-- /react-text -->
+                                        </div>
+                                    </div>
+                                    <div class="card-item card-btn">
+                                        <div>
+                                            <!-- react-text: 203 -->捐款次数
+                                            <!-- /react-text -->
+                                            <!-- react-text: 204 -->16,331
+                                            <!-- /react-text -->
+                                            <!-- react-text: 205 -->
+                                            <!-- /react-text -->
+                                            <!-- react-text: 206 -->次
+                                            <!-- /react-text -->
+                                        </div>
+                                        <a rel="noopener noreferrer" href="">
+                                            <div class="dn-button dn-button-primary"><span class="dn-text">我要捐款</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="home-recommend-project">
+                                <div class="picture">
+                                    <img src="image/袋鼠宝贝.png" class="picture" rel="noopener noreferrer" href="prepare.html">
+                                </div>
+                                <div class="card">
+                                    <div class="card-item card-title" title="袋鼠宝贝公益计划 | 慈善募捐"><a rel="noopener noreferrer" href="prepare.html">袋鼠宝贝公益计划 | 慈善募捐</a></div>
+                                    <div class="card-item card-intro tall" title="simpleIntro"></div>
+                                    <div class="card-item card-amount">
+                                        <div><span>已筹款</span><span class="highlight">
+                                                <!-- react-text: 221 -->&nbsp;
+                                                <!-- /react-text -->
+                                                <!-- react-text: 222 -->80,569.49
+                                                <!-- /react-text -->
+                                                <!-- react-text: 223 -->&nbsp;
+                                                <!-- /react-text -->
+                                            </span>
+                                            <!-- react-text: 224 -->
+                                            <!-- /react-text -->
+                                            <!-- react-text: 225 -->元
+                                            <!-- /react-text -->
+                                        </div>
+                                    </div>
+                                    <div class="card-item card-btn">
+                                        <div>
+                                            <!-- react-text: 228 -->捐款次数
+                                            <!-- /react-text -->
+                                            <!-- react-text: 229 -->7,557
+                                            <!-- /react-text -->
+                                            <!-- react-text: 230 -->
+                                            <!-- /react-text -->
+                                            <!-- react-text: 231 -->次
+                                            <!-- /react-text -->
+                                        </div>
+                                        <a rel="noopener noreferrer" href="">
+                                            <div class="dn-button dn-button-primary"><span class="dn-text">我要捐款</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="ant-pagination " unselectable="unselectable">
+                            <li title="Previous Page" class="ant-pagination-disabled ant-pagination-prev" aria-disabled="true"><a class="ant-pagination-item-link"><i
+                                        class="anticon anticon-left"><svg viewBox="64 64 896 896" class=""
+                                            data-icon="left" width="1em" height="1em" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li title="1" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active" tabindex="0"><a>1</a></li>
+                            <li title="Next Page" class="ant-pagination-disabled ant-pagination-next" aria-disabled="true"><a class="ant-pagination-item-link"><i
+                                        class="anticon anticon-right"><svg viewBox="64 64 896 896" class=""
+                                            data-icon="right" width="1em" height="1em" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <!-- react-empty: 248 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer-container"><span>美团公益&nbsp;©2018美团</span>
+                <div class="dn-button dn-button-link"><span class="dn-text">客服</span></div>
+                <div class="dn-button dn-button-link"><span class="dn-text">社会组织查询和非法举报</span></div>
+                <div class="dn-button dn-button-link"><span class="dn-text">关于我们</span></div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
