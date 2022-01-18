@@ -15,10 +15,31 @@
         font-size: 20px;
         color: black
     }
+    table.gridtable {
+        font-family: verdana,arial,sans-serif;
+        font-size:15px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+    }
+    table.gridtable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #dedede;
+    }
+    table.gridtable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #ffffff;
+    }
 </style>
 <HTML>
-<body bgcolor="#ffc0cb" id=tom>
-<center>
+<body id=tom style="margin: 0 13px">
     <% try {
         loginBean = (Login) session.getAttribute("loginBean");
         if (loginBean == null) {
@@ -52,13 +73,13 @@
             sql = con.createStatement();
             String query = "SELECT * FROM mobileForm where mobile_version = '" + mobileID + "'";
             rs = sql.executeQuery(query);
-            out.print("<table id=tom border=2>");
+            out.print("<table class=\"gridtable\" align=\"center\">");
             out.print("<tr>");
             out.print("<th>产品号");
             out.print("<th>名称");
             out.print("<th>制造商");
             out.print("<th>价格");
-            out.print("<th>放入购物车<th>");
+            out.print("<th>放入购物车");
             out.print("</tr>");
             String picture = "background.jpg";
             String detailMess = "";
@@ -81,9 +102,9 @@
             }
             out.print("</table>");
             out.print("产品详情:<br>");
-            String pic = "<img src='image/" + picture + "'></img>";
+            String pic = "<img align=\"left\" src='image/" + picture + "'></img>";
             out.print(pic); //产片图片
-            out.println("<div align=center>" + detailMess + "<div>");
+            out.println("<div>" + detailMess + "<div>");
             con.close(); //连接返回连接池。
         } catch (SQLException exp) {
         } finally {
@@ -93,7 +114,7 @@
             }
         }
     %>
-</center>
+
 </body>
 </HTML>
 

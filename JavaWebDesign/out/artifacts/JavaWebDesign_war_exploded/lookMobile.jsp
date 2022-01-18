@@ -15,10 +15,10 @@
     }
 </style>
 <HTML>
-<body id=ok bgcolor="#ffc0cb">
+<body id=ok>
 <div align="center">
     <br><br><br><br>
-    选择某类手机,分页显示这类手机。<br><br>
+    选择手机的操作系统,分页显示这类手机。<br><br>
     <% Connection con = null;
         Statement sql;
         ResultSet rs;

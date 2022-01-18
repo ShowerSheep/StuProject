@@ -4,22 +4,40 @@
     <%@ include file="head.html" %>
 </HEAD>
 <title>分页浏览页面</title>
-<style>
-    #tom {
-        font-family: Monaco;
-        font-size: 20px;
-        color: black
+<style type="text/css">
+
+    table.gridtable {
+        font-family: verdana,arial,sans-serif;
+        font-size:15px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+    }
+    table.gridtable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #dedede;
+    }
+    table.gridtable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #ffffff;
     }
 </style>
 <jsp:useBean id="dataBean" class="save.data.Record_Bean" scope="session"/>
 <HTML>
 
-<body bgcolor="#ffc0cb">
+<body>
 <center>
     <jsp:setProperty name="dataBean" property="pageSize" param="pageSize"/>
     <jsp:setProperty name="dataBean" property="currentPage" param="currentPage"/>
     </p>
-    <table id=tom border=1>
+    <table class="gridtable" border=1>
         <% String[][] table = dataBean.getTableRecord();
             if (table == null) {
                 out.print("没有记录");
@@ -63,7 +81,7 @@
             }
         %>
     </table>
-    <p id=tom>全部记录数:
+    <p calss=table_b>全部记录数:
         <jsp:getProperty name="dataBean" property="totalRecords"/>
         。
         <br>每页最多显示
@@ -76,24 +94,24 @@
         <jsp:getProperty name="dataBean" property="totalPages"/>
         页)。
     </p>
-    <table id=tom>
+    <table calss=table_b>
         <tr>
             <td>
                 <form action="" method=post>
                     <input type=hidden name="currentPage" value="<%=dataBean.getCurrentPage()-1 %>"/>
-                    <input type=submit id=tom value="上一页"/>
+                    <input type=submit calss=table_b value="上一页"/>
                 </form>
             </td>
             <td>
                 <form action="" method=post>
                     <input type=hidden name="currentPage" value="<%=dataBean.getCurrentPage()+1 %>"/>
-                    <input type=submit id=tom value="下一页">
+                    <input type=submit calss=table_b value="下一页">
                 </form>
             </td>
             <td>
-                <form action="" id=tom method=post>
-                    输入页码：<input type=textid=tom name="currentPage" size=2>
-                    <input type=submit id=tom value="提交">
+                <form action="" calss=table_b method=post>
+                    输入页码：<input type=textcalss=table_b name="currentPage" size=2>
+                    <input type=submit calss=table_b value="提交">
                 </form>
             </td>
         </tr>
@@ -101,9 +119,9 @@
             <td></td>
             <td></td>
             <td>
-                <form action="" id=tom method=post>
-                    每页显示<input type=text id=tom name="pageSize" value=<%=dataBean.getPageSize()%> size=1>
-                    条记录<input type=submit id=tom value="确定"></form>
+                <form action="" calss=table_b method=post>
+                    每页显示<input type=text calss=table_b name="pageSize" value=<%=dataBean.getPageSize()%> size=1>
+                    条记录<input type=submit calss=table_b value="确定"></form>
             </td>
         </tr>
     </table>

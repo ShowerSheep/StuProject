@@ -86,8 +86,12 @@ public class HandleLogin extends HttpServlet {
             if (name.equals(logname)) {
                 loginBean.setBackNews(logname + "登录成功");
                 loginBean.setLogname(logname);
+
             } else {  //数据模型存储新的登录用户:
                 loginBean.setBackNews(logname + "登录成功");
+                RequestDispatcher dispatcher=
+                        request.getRequestDispatcher("lookMobile.jsp");
+                dispatcher.forward(request, response);//转发
                 loginBean.setLogname(logname);
             }
         } catch (Exception ee) {

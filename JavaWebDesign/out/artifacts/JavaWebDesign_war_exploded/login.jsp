@@ -19,7 +19,7 @@
 
 </style>
 
-<body class="my-login-page" bgcolor="#ffc0cb">
+<body class="my-login-page">
 
 <section class="h-100">
     <div class="container h-100">

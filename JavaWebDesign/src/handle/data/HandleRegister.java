@@ -65,6 +65,9 @@ public class HandleRegister extends HttpServlet {
                 int m=sql.executeUpdate();
                 if(m!=0){
                     backNews="注册成功";
+                    RequestDispatcher dispatcher=
+                            request.getRequestDispatcher("login.jsp");
+                    dispatcher.forward(request, response);//转发
                     userBean.setBackNews(backNews);
                     userBean.setLogname(logname);
                     userBean.setPhone(phone);

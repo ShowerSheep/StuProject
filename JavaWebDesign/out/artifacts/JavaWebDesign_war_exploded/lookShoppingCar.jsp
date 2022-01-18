@@ -15,10 +15,32 @@
         font-size: 20px;
         color: black;
     }
+    table.gridtable {
+        font-family: verdana,arial,sans-serif;
+        font-size:15px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+    }
+    table.gridtable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #dedede;
+    }
+    table.gridtable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #ffffff;
+    }
 
 </style>
 <HTML>
-<body bgcolor="#ffc0cb" id=tom>
+<body id=tom>
 <div align="center">
     <% if (loginBean == null) {
         response.sendRedirect("login.jsp");//重定向到登录页面。
@@ -37,7 +59,7 @@
         Connection con = null;
         Statement sql;
         ResultSet rs;
-        out.print("<table border=1 >");
+        out.print("<table class=\"gridtable\">");
         out.print("<tr>");
         out.print("<th id=tom width=120>" + "手机标识(id)");
         out.print("<th id=tom width=250>" + "手机名称");

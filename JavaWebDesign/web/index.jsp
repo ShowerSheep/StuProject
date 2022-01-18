@@ -4,21 +4,10 @@
 <HEAD>
     <%@ include file="head.html" %>
 </HEAD>
-<style>
-    #ok {
-        font-family: 楷体;
-        font-size: 100px;
-        color: green
-    }
-</style>
+
 <HTML>
-
-<body bgcolor="#ffc0cb">
-
-<br><br><br><br><br><br><br><br>
-<center id=ok>
-    欢迎光临
-</center>
-</body>
-
+    <body>
+        <br><br><br><br><br><br><br><br>
+        <p style="text-align: center;font-family: 楷体;font-size: 100px;color: green">欢迎光临</p>
+    </body>
 </HTML>

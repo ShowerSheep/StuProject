@@ -11,7 +11,7 @@
     }
 </style>
 <HTML>
-<body bgcolor=pink id=tom>
+<body id=tom>
 <div align="center">
     <p id=tom>查询时可以输入手机的<i style="color: red">版本号</i>或<i style="color: red">手机名称</i>及<i style="color: red">价格</i>。<br>
         手机名称支持<i style="color: red">模糊查询</i>。

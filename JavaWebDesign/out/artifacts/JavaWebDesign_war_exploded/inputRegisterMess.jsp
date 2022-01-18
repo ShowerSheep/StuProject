@@ -25,7 +25,7 @@
 <script src="js/my-login.js"></script>
 
 
-<body bgcolor="#ffc0cb" class="my-login-page">
+<body class="my-login-page">
 
 <section class="h-100">
     <div class="container h-100">
@@ -78,7 +78,7 @@
 
                             <div class="form-group no-margin">
                                 <input type="submit" class="btn btn-primary btn-block">
-                                    注册
+                                注册
                                 </input>
                             </div>
                             <div class="margin-top20 text-center">
@@ -88,34 +88,14 @@
                         <div align=" center">
                             注册反馈：
                             <jsp:getProperty name="userBean" property="backNews"/>
+                            <%
+
+
+                            %>
 
                             <div>
-<%--                            <table id=yes border=3>--%>
-<%--                                <tr>--%>
-<%--                                    <td>会员名称:</td>--%>
-<%--                                    <td>--%>
-<%--                                        <jsp:getProperty name="userBean" property="logname"/>--%>
-<%--                                    </td>--%>
-<%--                                </tr>--%>
-<%--                                <tr>--%>
-<%--                                    <td>姓名:</td>--%>
-<%--                                    <td>--%>
-<%--                                        <jsp:getProperty name="userBean" property="realname"/>--%>
-<%--                                    </td>--%>
-<%--                                </tr>--%>
-<%--                                <tr>--%>
-<%--                                    <td>地址:</td>--%>
-<%--                                    <td>--%>
-<%--                                        <jsp:getProperty name="userBean" property="address"/>--%>
-<%--                                    </td>--%>
-<%--                                </tr>--%>
-<%--                                <tr>--%>
-<%--                                    <td>电话:</td>--%>
-<%--                                    <td>--%>
-<%--                                        <jsp:getProperty name="userBean" property="phone"/>--%>
-<%--                                    </td>--%>
-<%--                                </tr>--%>
-</div>
+
+                            </div>
 
                             </table>
                         </div>
@@ -125,7 +105,6 @@
         </div>
     </div>
 </section>
-
 
 
 </body>
